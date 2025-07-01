@@ -1,0 +1,113 @@
+/* h1 {
+    color: blue;
+    font-size: 30px;
+} */
+.subtitulos {
+    color: green;
+    font-size: 18px;
+}
+
+#sub {
+    color: yellowgreen;
+    font-size: 18px;
+}
+
+/* Selector de etiqueta */
+/* p {
+    color: blue;
+} */
+
+/* Selector de clase */
+.clase {
+    color: red;
+}
+
+/* Selector de ID */
+#ID {
+    color: orange;
+}
+
+/* Contenedor */
+.contenedor {
+    background-color: brown;
+    color: lightgray;
+    font-size: 35px;
+}
+
+/* Contenedor "card" */
+.card {
+    background-color: #033268;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-family: Arial, sans-serif;
+}
+
+.nombre {
+    font-size: 25px;
+}
+
+.apellidos {
+    font-size: 25px;
+}
+
+.edad {
+    font-size: 15px;
+}
+
+.correo {
+    font-size: 20px;
+    color: red;
+}
+
+/* Estilos de Maquetacion */
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #033268;
+}
+
+h2 {
+    text-align: center;
+}
+
+.logo {
+    height: auto;
+}
+
+.profesores {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3498db;
+}
+
+.estudiantes {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3498db;
+}
+
+.imagenes {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 50%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
