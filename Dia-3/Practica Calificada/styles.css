@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  width: 350px;
+}
+
+.logo {
+  font-family: 'Segoe Script', cursive;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.login-form {
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #111;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3897f0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #333;
+  margin: 0 10px;
+}
+
+.facebook-login {
+  color: #1877f2;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.forgot {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.signup {
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #111;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+}
+
+.signup-link {
+  color: #3897f0;
+  text-decoration: none;
+}
