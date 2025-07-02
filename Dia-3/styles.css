@@ -1,0 +1,199 @@
+/* body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+} */
+
+.btn {
+    background-color: blueviolet;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.btn2 {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.btn3 {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.btn4 {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* Maquetacion 1 */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 40px auto;
+    border: 2px solid orange;
+    padding: 20px;
+    width: fit-content;
+    align-items: flex-start;
+    gap: 8px; /* espacio entre las dos cajas */
+}
+
+.caja {
+    background-color: #fff;
+    border: 2px solid orange;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.izquierda {
+    margin: 20px 0 20px 15px;
+}
+
+.derecha {
+    margin: 20px 10px 20px 0;
+}
+
+/* Ejercicios */
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.ej1 {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+  padding: 20px;
+}
+
+.ej2a {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+.ej2b {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 30px;
+}
+
+.ej3a {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  margin: 20px;
+}
+
+.ej3b {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.ej4 {
+  width: 150px;
+  height: 100px;
+  border-top: 5px solid red;
+  border-right: 3px dashed green;
+  border-bottom: 4px dotted blue;
+  border-left: 2px double black;
+  padding: 10px;
+}
+
+.ej5 {
+  width: 300px;
+  background-color: #ddd;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.ej6 {
+  width: 200px;
+  height: 200px;
+  padding: 40px;
+  border: 4px solid black;
+  background-color: #eee;
+}
+
+.ej7 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.ej8 {
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.ej9 {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.ej10 {
+  background-color: #ffdddd;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
