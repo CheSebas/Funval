@@ -65,6 +65,7 @@ nav {
     right: 20px;
     transform: translateY(-50%);
     width: 200px;
+    border-radius: 5px;
 }
 
 .info {
