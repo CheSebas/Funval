@@ -1,49 +1,49 @@
 body {
-    background-color: #143959;
+  background-color: #143959;
 }
 
 h1 {
-    color: #5A86BF;
-    font-size: 28px;
-    text-align: center;
+  color: #5a86bf;
+  font-size: 28px;
+  text-align: center;
 }
 
 p {
-    font-size: 16px;
-    color: #9BABBF;
+  font-size: 16px;
+  color: #9babbf;
 }
 
 img {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: 10px auto;
-    border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
 }
 
 h2 {
-    color: #5A86BF;
+  color: #5a86bf;
 }
 
 h3 {
-    color: #2B88D9;
+  color: #2b88d9;
 }
 
 ul {
-    color: #9BABBF;
-    font-size: 15px;
+  color: #9babbf;
+  font-size: 15px;
 }
 
 ol {
-    color: #9BABBF;
-    font-size: 15px;
+  color: #9babbf;
+  font-size: 15px;
 }
 
 a {
-    color: #9BABBF;
-    text-decoration: none;
+  color: #9babbf;
+  text-decoration: none;
 }
 
 i {
-    color: #3084F2;
+  color: #3084f2;
 }

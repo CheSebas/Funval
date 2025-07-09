@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-  font-family: 'Segoe Script', cursive;
+  font-family: "Segoe Script", cursive;
   font-size: 36px;
   margin-bottom: 15px;
 }

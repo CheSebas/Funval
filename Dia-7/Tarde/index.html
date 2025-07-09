@@ -1,91 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
     <title>Dia 7 Tarde</title>
-</head>
-<body class="bg-gray-900 text-white min-h-screen flex justify-center items-center px-4 py-10">
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-gray-900 px-4 py-10 text-white"
+  >
+    <div class="grid w-full max-w-7xl grid-cols-1 gap-6 lg:grid-cols-4">
+      <!-- Tarjetas de conciertos -->
+      <div
+        class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:col-span-3"
+      >
+        <!-- Tarjeta 1 -->
+        <div class="relative overflow-hidden rounded-xl">
+          <img
+            src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/1.jpg"
+            class="h-48 w-full object-cover"
+          />
+          <div
+            class="bg-opacity-50 absolute bottom-0 left-0 w-full bg-black p-4"
+          >
+            <h2 class="font-bold">Rock In Rio</h2>
+            <p class="text-sm">27 de octubre 2021</p>
+          </div>
+        </div>
 
-  <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 w-full max-w-7xl">
+        <!-- Repite para más conciertos -->
+        <div class="relative overflow-hidden rounded-xl">
+          <img
+            src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/2.jpg"
+            class="h-48 w-full object-cover"
+          />
+          <div
+            class="bg-opacity-50 absolute bottom-0 left-0 w-full bg-black p-4"
+          >
+            <h2 class="font-bold">FalconMaster Concert</h2>
+            <p class="text-sm">12 de noviembre 2021</p>
+          </div>
+        </div>
 
-    <!-- Tarjetas de conciertos -->
-    <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      
-      <!-- Tarjeta 1 -->
-      <div class="relative rounded-xl overflow-hidden">
-        <img src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/1.jpg" class="w-full h-48 object-cover" />
-        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 w-full">
-          <h2 class="font-bold">Rock In Rio</h2>
-          <p class="text-sm">27 de octubre 2021</p>
+        <div class="relative overflow-hidden rounded-xl">
+          <img
+            src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/3.jpg"
+            class="h-48 w-full object-cover"
+          />
+          <div
+            class="bg-opacity-50 absolute bottom-0 left-0 w-full bg-black p-4"
+          >
+            <h2 class="font-bold">Coachella</h2>
+            <p class="text-sm">13 de diciembre 2021</p>
+          </div>
+        </div>
+
+        <!-- Continúa con las otras 3 -->
+        <div class="relative overflow-hidden rounded-xl">
+          <img
+            src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/4.jpg"
+            class="h-48 w-full object-cover"
+          />
+          <div
+            class="bg-opacity-50 absolute bottom-0 left-0 w-full bg-black p-4"
+          >
+            <h2 class="font-bold">US Festival</h2>
+            <p class="text-sm">20 de diciembre 2021</p>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-xl">
+          <img
+            src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/5.jpg"
+            class="h-48 w-full object-cover"
+          />
+          <div
+            class="bg-opacity-50 absolute bottom-0 left-0 w-full bg-black p-4"
+          >
+            <h2 class="font-bold">Altmont Speedway</h2>
+            <p class="text-sm">27 de diciembre 2021</p>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-xl">
+          <img
+            src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/6.jpg"
+            class="h-48 w-full object-cover"
+          />
+          <div
+            class="bg-opacity-50 absolute bottom-0 left-0 w-full bg-black p-4"
+          >
+            <h2 class="font-bold">Rock In Rio Again</h2>
+            <p class="text-sm">1 de enero 2021</p>
+          </div>
         </div>
       </div>
 
-      <!-- Repite para más conciertos -->
-      <div class="relative rounded-xl overflow-hidden">
-        <img src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/2.jpg" class="w-full h-48 object-cover" />
-        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 w-full">
-          <h2 class="font-bold">FalconMaster Concert</h2>
-          <p class="text-sm">12 de noviembre 2021</p>
+      <!-- Tarjeta lateral de info -->
+      <div
+        class="flex flex-col justify-between rounded-xl bg-gradient-to-b from-red-700 to-black p-6"
+      >
+        <img
+          src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/banner.jpg"
+        />
+        <div>
+          <h2 class="mb-4 text-xl font-bold">Rock Legends 2021</h2>
+          <ul class="space-y-2 text-sm">
+            <li>Guns N Roses</li>
+            <li>AC/DC</li>
+            <li>Motley Crue</li>
+            <li>The Cult</li>
+            <li>Poison</li>
+            <li>Def Leppard</li>
+          </ul>
         </div>
+        <button
+          class="mt-6 rounded-full bg-yellow-400 px-4 py-2 font-semibold text-black hover:bg-yellow-300"
+        >
+          Comprar boletos
+        </button>
       </div>
-
-      <div class="relative rounded-xl overflow-hidden">
-        <img src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/3.jpg" class="w-full h-48 object-cover" />
-        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 w-full">
-          <h2 class="font-bold">Coachella</h2>
-          <p class="text-sm">13 de diciembre 2021</p>
-        </div>
-      </div>
-
-      <!-- Continúa con las otras 3 -->
-      <div class="relative rounded-xl overflow-hidden">
-        <img src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/4.jpg" class="w-full h-48 object-cover" />
-        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 w-full">
-          <h2 class="font-bold">US Festival</h2>
-          <p class="text-sm">20 de diciembre 2021</p>
-        </div>
-      </div>
-
-      <div class="relative rounded-xl overflow-hidden">
-        <img src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/5.jpg" class="w-full h-48 object-cover" />
-        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 w-full">
-          <h2 class="font-bold">Altmont Speedway</h2>
-          <p class="text-sm">27 de diciembre 2021</p>
-        </div>
-      </div>
-
-      <div class="relative rounded-xl overflow-hidden">
-        <img src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/6.jpg" class="w-full h-48 object-cover" />
-        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 w-full">
-          <h2 class="font-bold">Rock In Rio Again</h2>
-          <p class="text-sm">1 de enero 2021</p>
-        </div>
-      </div>
-
     </div>
-
-    <!-- Tarjeta lateral de info -->
-    <div class="bg-gradient-to-b from-red-700 to-black rounded-xl p-6 flex flex-col justify-between">
-    <img src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-7/tarde/img/banner.jpg">
-      <div>
-        <h2 class="text-xl font-bold mb-4">Rock Legends 2021</h2>
-        <ul class="space-y-2 text-sm">
-          <li>Guns N Roses</li>
-          <li>AC/DC</li>
-          <li>Motley Crue</li>
-          <li>The Cult</li>
-          <li>Poison</li>
-          <li>Def Leppard</li>
-        </ul>
-      </div>
-      <button class="mt-6 bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2 px-4 rounded-full">
-        Comprar boletos
-      </button>
-    </div>
-
-  </div>
-
-</body>
+  </body>
 </html>

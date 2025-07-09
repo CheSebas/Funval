@@ -1,18 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
     <title>Dia 8</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- <div class="h-52 flex items-center justify-center text-xs text-white bg-red-700 sm:text-lg sm:text-yellow-300 sm:bg-purple-800 md:text-2xl md:text-green-300 md:bg-green-700 lg:text-4xl lg:text-blue-200 lg:bg-amber-800 xl:text-6xl xl:text-pink-300 xl:bg-sky-800 2xl:text-8xl 2xl:text-black 2xl:bg-pink-800">
         Soy una caja
     </div> -->
-    
-    <div class="h-52 flex items-center justify-start text-left text-xs text-white bg-red-700 sm:justify-center sm:text-center sm:text-lg sm:text-yellow-300 sm:bg-purple-800 md:justify-end md:text-right md:text-2xl md:text-green-300 md:bg-green-700 lg:justify-start lg:text-left lg:text-4xl lg:text-blue-200 lg:bg-amber-800 xl:justify-center xl:text-center xl:text-6xl xl:text-pink-300 xl:bg-sky-800 2xl:justify-end 2xl:text-right 2xl:text-8xl 2xl:text-black 2xl:bg-pink-800">
-        Soy una caja
+
+    <div
+      class="flex h-52 items-center justify-start bg-red-700 text-left text-xs text-white sm:justify-center sm:bg-purple-800 sm:text-center sm:text-lg sm:text-yellow-300 md:justify-end md:bg-green-700 md:text-right md:text-2xl md:text-green-300 lg:justify-start lg:bg-amber-800 lg:text-left lg:text-4xl lg:text-blue-200 xl:justify-center xl:bg-sky-800 xl:text-center xl:text-6xl xl:text-pink-300 2xl:justify-end 2xl:bg-pink-800 2xl:text-right 2xl:text-8xl 2xl:text-black"
+    >
+      Soy una caja
     </div>
-</body>
+
+    <br />
+
+    <!-- <div class="bg-red-700 text-white h-56 sm:hidden">Pantalla S</div>
+    <div class="bg-blue-700 text-white h-56 hidden sm:block md:hidden">Pantalla M</div>
+    <div class="bg-sky-900 text-white h-56 hidden md:block">Pantalla L</div> -->
+
+    <!-- realizar en 3 o 4 cajas los diseños responsivos q trabajaron en una sola -->
+
+    <div
+      class="flex h-56 items-center justify-center bg-red-700 px-4 text-center text-xs text-white sm:hidden"
+    >
+      Pantalla XS
+    </div>
+
+    <div
+      class="hidden h-56 items-center justify-center bg-purple-800 px-4 text-center text-lg text-yellow-300 sm:flex md:hidden"
+    >
+      Pantalla SM
+    </div>
+
+    <div
+      class="hidden h-56 items-center justify-center bg-green-700 px-4 text-center text-2xl text-green-300 md:flex lg:hidden"
+    >
+      Pantalla MD
+    </div>
+
+    <div
+      class="hidden h-56 items-center justify-center bg-amber-800 px-4 text-center text-4xl text-blue-200 lg:flex xl:hidden"
+    >
+      Pantalla LG
+    </div>
+
+    <div
+      class="hidden h-56 items-center justify-center bg-sky-800 px-4 text-center text-6xl text-pink-300 xl:flex"
+    >
+      Pantalla XL
+    </div>
+  </body>
 </html>

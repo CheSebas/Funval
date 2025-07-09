@@ -1,30 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
     <title>Dia 7</title>
     <style>
-        .logo:hover {
-            content: url(https://lumiere-a.akamaihd.net/v1/images/darth-vader-main_4560aff7.jpeg?region=0%2C67%2C1280%2C720);
-        }
+      .logo:hover {
+        content: url(https://lumiere-a.akamaihd.net/v1/images/darth-vader-main_4560aff7.jpeg?region=0%2C67%2C1280%2C720);
+      }
     </style>
-</head>
-<body class="flex items-center justify-center min-h-screen bg-cover bg-center" style="background-image: url('https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-14_856985d9.jpeg?download=true');">
-    <div class="bg-gray-900 p-8 rounded shadow-lg w-full max-w-sm text-center border border-yellow-500">
-        
-        <img src="https://lumiere-a.akamaihd.net/v1/images/anakin-skywalker-main_23e5105b.jpeg?region=387%2C27%2C1350%2C760" alt="Logo" class="logo mx-auto mb-6 w-32 h-32 object-cover rounded-full border border-yellow-500 transition duration-300" />
-        
-        <input type="text" placeholder="Nombre" class="w-full px-4 py-2 mb-4 border border-yellow-500 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-        
-        <input type="password" placeholder="Contraseña" class="w-full px-4 py-2 mb-4 border border-yellow-500 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-        
-        <button class="w-full bg-yellow-500 text-black font-semibold py-2 rounded hover:bg-yellow-400 transition duration-200">
-            Login
-        </button>
-    
-    </div>
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-cover bg-center"
+    style="
+      background-image: url(&quot;https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-14_856985d9.jpeg?download=true&quot;);
+    "
+  >
+    <div
+      class="w-full max-w-sm rounded border border-yellow-500 bg-gray-900 p-8 text-center shadow-lg"
+    >
+      <img
+        src="https://lumiere-a.akamaihd.net/v1/images/anakin-skywalker-main_23e5105b.jpeg?region=387%2C27%2C1350%2C760"
+        alt="Logo"
+        class="logo mx-auto mb-6 h-32 w-32 rounded-full border border-yellow-500 object-cover transition duration-300"
+      />
 
-</body>
+      <input
+        type="text"
+        placeholder="Nombre"
+        class="mb-4 w-full rounded border border-yellow-500 bg-gray-800 px-4 py-2 text-white focus:ring-2 focus:ring-yellow-400 focus:outline-none"
+      />
+
+      <input
+        type="password"
+        placeholder="Contraseña"
+        class="mb-4 w-full rounded border border-yellow-500 bg-gray-800 px-4 py-2 text-white focus:ring-2 focus:ring-yellow-400 focus:outline-none"
+      />
+
+      <button
+        class="w-full rounded bg-yellow-500 py-2 font-semibold text-black transition duration-200 hover:bg-yellow-400"
+      >
+        Login
+      </button>
+    </div>
+  </body>
 </html>

@@ -1,66 +1,66 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    display: flex;
-    background-color: beige;
-    flex-wrap: wrap;
+  display: flex;
+  background-color: beige;
+  flex-wrap: wrap;
 }
 
 .caja {
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .caja1 {
-    background-color: red;
+  background-color: red;
 }
 
 .caja2 {
-    background-color: blue;
+  background-color: blue;
 }
 
 .caja3 {
-    background-color: green;
+  background-color: green;
 }
 
 .caja4 {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .caja5 {
-    background-color: orange;
+  background-color: orange;
 }
 
 .caja6 {
-    background-color: purple;
+  background-color: purple;
 }
 
 .caja7 {
-    background-color: pink;
+  background-color: pink;
 }
 
 .caja8 {
-    background-color: cyan;
+  background-color: cyan;
 }
