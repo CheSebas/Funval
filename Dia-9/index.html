@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body id="todo" class="h-screen flex items-center justify-center flex-col p-4 bg-[url('https://m.media-amazon.com/images/I/81F2116cWJL.jpg')] bg-center bg-cover dark:bg-[url('https://c4.wallpaperflare.com/wallpaper/822/334/367/comics-spider-man-wallpaper-preview.jpg')]">
+    
+    <h1 class="text-black dark:text-white">Hola mundo</h1>
+
+    <button class="bg-blue-600 text-white p-4 rounded-2xl mt-2" id="btn">
+        Cambio de tema
+    </button>
+
+    <script>
+        let botonCambio = document.querySelector("#btn");
+        let todo = document.querySelector("#todo");
+        botonCambio.addEventListener("click", function () {
+            todo.classList.toggle("dark");
+        });
+    </script>
+</body>
+</html>
