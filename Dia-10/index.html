@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" class="transition duration-500">
+<html
+  lang="en"
+  class="bg-white text-black dark:bg-neutral-900 dark:text-white todo"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
     <title>Dia 10</title>
-
   </head>
-  <body class="bg-black dark:bg-gray-950 text-black dark:text-white">
-    <header class="bg-[#fbe4c4] dark:bg-gray-900 text-black dark:text-white p-4 flex justify-between items-center">
+  <body>
+    <header
+      class="flex items-center justify-around bg-[#fbe4c4] dark:bg-neutral-800 sm:justify-between sm:px-7"
+    >
+      <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-8"
+          class="size-8 sm:hidden"
         >
           <path
             stroke-linecap="round"
@@ -23,9 +28,14 @@
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
-        <h1 class="text-2xl font-bold">Librería Fantástica</h1>
-
-      <img src="./img/libroslogo1-Photoroom.png" alt="" class="h-24" />
+        <ul class="hidden sm:flex gap-2.5 md:gap-4 lg:gap-6 xl:gap-10 text-md">
+          <li><button class="hover:bg-white p-2 rounded-2xl">Inicio</button></li>
+          <li><button class="hover:bg-white p-2 rounded-2xl">Categorias</button></li>
+          <li><button class="hover:bg-white p-2 rounded-2xl">Material Exclusivo</button></li>
+          <li><button class="hover:bg-white p-2 rounded-2xl">Libros</button></li>
+        </ul>
+      </div>
+      <img src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-10/img/libroslogo1-Photoroom.png" alt="" class="h-24" />
       <div class="flex items-center justify-center gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -55,16 +65,16 @@
             d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
           />
         </svg>
-        <h2 class="text-md hidden">$20.00</h2>
-    </div>
-        <button id="toggleDark" class="p-2 rounded-full bg-yellow-300 dark:bg-gray-700 text-black dark:text-white">
-            🌞/🌙
+        <h2 class="text-md hidden sm:flex font-semibold">$20.00</h2>
+        <button class="btn bg-white p-2 rounded-2xl dark:text-black" aria-label="Activar modo oscuro">
+          Dark Mode
         </button>
+      </div>
     </header>
-
-    <main class="p-7 flex flex-col gap-4 bg-gray-100">
-      <div class="carusel overflow-x-auto flex items-center gap-4 px-3 scroll-smooth">
-
+    <main class="p-7 flex flex-col gap-4 bg-gray-100 dark:bg-black max-w-screen-xl mx-auto">
+      <div
+        class="carusel overflow-x-scroll md:overflow-hidden flex items-center justify-around gap-10 px-3"
+      >
         <div class="shrink-0">
           <img
             src="https://cdn.shopify.com/s/files/1/0705/7784/8556/files/book-hero-team.jpg?v=1742854692"
@@ -102,190 +112,78 @@
         </div>
 
       </div>
-      <div class="contenedor-categorias grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center gap-4 p-4">
-
-        <div class="card-categoria bg-transparent dark:bg-gray-800 text-yellow-500 p-3 w-full max-w-xs flex flex-col items-center justify-center">
+      <div
+        class="contenedor-categorias grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 place-items-center gap-4"
+      >
+        <div
+          class="card-categoria bg-black flex flex-col items-center justify-center p-3 rounded-2xl sm:p-7"
+        >
           <img
             src="https://images.cdn2.buscalibre.com/fit-in/360x360/7e/b3/7eb3e5916d2fcd844888da213fe0ba40.jpg"
             alt=""
-            class="w-32 sm:w-48 object-cover"
+            class="w-48 rounded-2xl"
           />
-          <h2 class="text-yellow-500 font-extrabold text-2xl sm:text-3xl text-center">INFANTIL</h2>
+          <h2 class="text-yellow-500 font-extrabold text-3xl">INFANTILES</h2>
         </div>
-        <div class="card-categoria bg-transparent dark:bg-gray-800 text-yellow-500 p-3 w-full max-w-xs flex flex-col items-center justify-center">
+        <div
+          class="card-categoria bg-black flex flex-col items-center justify-center p-3 rounded-2xl sm:p-7"
+        >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Baldor.jpg/330px-Baldor.jpg"
             alt=""
-            class="w-32 sm:w-48 object-cover"
+            class="w-48 rounded-2xl"
           />
-          <h2 class="text-yellow-500 font-extrabold text-2xl sm:text-3xl text-center">CIENCIA</h2>
+          <h2 class="text-yellow-500 font-extrabold text-3xl">CIENCIA</h2>
         </div>
-        <div class="card-categoria bg-transparent dark:bg-gray-800 text-yellow-500 p-3 w-full max-w-xs flex flex-col items-center justify-center">
+        <div
+          class="card-categoria bg-black flex flex-col items-center justify-center p-3 rounded-2xl sm:p-7"
+        >
           <img
             src="https://www.penguinlibros.com/es/6017464-home_default/harry-potter-y-el-prisionero-de-azkaban-harry-potter-edicion-con-ilustraciones-de-xavier-bonet-3.webp"
             alt=""
-            class="w-32 sm:w-48 object-cover"
+            class="w-48 rounded-2xl"
           />
-          <h2 class="text-yellow-500 font-extrabold text-2xl sm:text-3xl text-center">FANTASIA</h2>
+          <h2 class="text-yellow-500 font-extrabold text-3xl">FANTASIA</h2>
         </div>
-        <div class="card-categoria bg-transparent dark:bg-gray-800 text-yellow-500 p-3 w-full max-w-xs flex flex-col items-center justify-center">
+        <div
+          class="card-categoria bg-black flex flex-col items-center justify-center p-3 rounded-2xl sm:p-7"
+        >
           <img
             src="https://upload.wikimedia.org/wikipedia/en/c/c9/DB_Tank%C5%8Dbon.png"
             alt=""
-            class="w-32 sm:w-48 object-cover"
+            class="w-48 rounded-2xl"
           />
-          <h2 class="text-yellow-500 font-extrabold text-2xl sm:text-3xl text-center">MANGA</h2>
+          <h2 class="text-yellow-500 font-extrabold text-3xl">MANGA</h2>
         </div>
       </div>
-      <div class="contenedor-otro flex flex-col gap-4">
+      <div class="contenedor-otro grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <h2
-          class="w-full text-center text-4xl text-yellow-900 font-extrabold mb-4"
+          class="w-full text-center text-4xl text-yellow-400 font-extrabold mb-4 sm:col-span-2"
         >
           Material Exclusivo
         </h2>
-        <div class="card-otros p-4 bg-white shadow-xl flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto">
+        <div
+          class="card-otros p-3 bg-white shadow-xl flex flex-col items-center justify-center gap-3 dark:bg-slate-800 sm:row-span-2"
+        >
+          <img
+            src="https://www.frikimasters.es/3489-large_default/varita-magica-harry-potter-harry-potter-30-cm.jpg"
+            alt=""
+            class="hidden sm:flex"
+          />
           <img
             src="https://minisocl.vtexassets.com/arquivos/ids/285253/Varita-M-gica-De-Juguete-Harry-Potter-Sint-tica-Caf-1-25669.jpg?v=638755010673130000"
             alt=""
-            class="h-64 object-cover rounded-md w-full"
+            class="h-72"
           />
-          <div class="text-center">
-            <h2 class="text-lg sm:text-xl font-semibold">New Edition varita de Ron Weasley</h2>
-            <p class="text-yellow-400 font-bold text-xl sm:text-2xl">$35.00</p>
-          </div>
-          <button
-            class="bg-gradient-to-r from-green-700 to-green-500 dark:from-green-900 dark:to-green-700 text-yellow-100 p-3 sm:p-4 rounded-xl w-full text-xl font-bold flex items-center justify-center gap-1.5 transition-all duration-300 hover:to-green-300 dark:hover:to-green-600"
-          >
-            Comprar
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 font-bold"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="card-otros p-4 bg-white shadow-xl flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto">
 
-          <img
-            src="https://realplaza.vtexassets.com/arquivos/ids/33764260/image-1.jpg?v=638270458397030000"
-            alt=""
-            class="h-64 object-cover rounded-md w-full"
-          />
-          <div class="text-center">
-            <h2 class="text-lg sm:text-xl font-semibold">New Edition Chalina Harry Potter</h2>
-            <p class="text-yellow-400 font-bold text-xl sm:text-2xl">$50.00</p>
+          <div>
+            <h2 class="text-xl">New Edition varita de Ron Weasley</h2>
+            <p class="text-yellow-400 font-semibold text-2xl">$35.00</p>
           </div>
           <button
-            class="bg-gradient-to-r from-green-700 to-green-500 dark:from-green-900 dark:to-green-700 text-yellow-100 p-3 sm:p-4 rounded-xl w-full text-xl font-bold flex items-center justify-center gap-1.5 transition-all duration-300 hover:to-green-300 dark:hover:to-green-600"
+            class="bg-green-800 text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
           >
-            Comprar
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 font-bold"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="card-otros p-4 bg-white shadow-xl flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto">
-
-          <img
-            src="https://acdn-us.mitiendanube.com/stores/004/419/408/products/376900_b_collargryffindor-94641822dcb194779a17126702678615-1024-1024.jpg"
-            alt=""
-            class="h-64 object-cover rounded-md w-full"
-          />
-          <div class="text-center">
-            <h2 class="text-lg sm:text-xl font-semibold">New Edition Collar Harry Potter</h2>
-            <p class="text-yellow-400 font-bold text-xl sm:text-2xl">$120.00</p>
-          </div>
-          <button
-            class="bg-gradient-to-r from-green-700 to-green-500 dark:from-green-900 dark:to-green-700 text-yellow-100 p-3 sm:p-4 rounded-xl w-full text-xl font-bold flex items-center justify-center gap-1.5 transition-all duration-300 hover:to-green-300 dark:hover:to-green-600"
-          >
-            Comprar
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 font-bold"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="contenedor-libros flex flex-col gap-4">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-yellow-900 font-extrabold text-center mb-4">
-          Libros a la venta
-        </h2>
-        <div class="card-otros p-4 bg-white shadow-xl flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHuhmuzRxV3ebY-s3ZZJDHD3zSTThdNHntyQ&s"
-            alt=""
-            class="h-64 object-cover rounded-md w-full"
-          />
-          <div class="text-center">
-            <h2 class="text-lg sm:text-xl font-semibold">Libro De La Selva</h2>
-            <p class="text-yellow-400 font-bold text-xl sm:text-2xl">$120.00</p>
-          </div>
-          <button
-            class="bg-gradient-to-r from-yellow-700 to-yellow-500 dark:from-yellow-900 dark:to-yellow-700 text-yellow-200 p-3 sm:p-4 rounded-xl w-full text-xl font-bold flex items-center justify-center gap-1.5 transition-all duration-300 hover:to-yellow-300 dark:hover:to-yellow-600"
-          >
-            Comprar
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 font-bold"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="card-otros p-4 bg-white shadow-xl flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto">
-          <img
-            src="https://www.hola.com/horizon/original_aspect_ratio/008340400605-los-mejores-libros-infantiles-para-celebrar-el-d-a-internacional-del-libro-infan.jpg"
-            alt=""
-            class="h-64 object-cover rounded-md w-full"
-          />
-          <div class="text-center">
-            <h2 class="text-lg sm:text-xl font-semibold">
-              Alicia y el cerebro maravilloso
-            </h2>
-            <p class="text-yellow-400 font-bold text-xl sm:text-2xl">$100.00</p>
-          </div>
-          <button
-            class="bg-gradient-to-r from-yellow-700 to-yellow-500 dark:from-yellow-900 dark:to-yellow-700 text-yellow-200 p-3 sm:p-4 rounded-xl w-full text-xl font-bold flex items-center justify-center gap-1.5 transition-all duration-300 hover:to-yellow-300 dark:hover:to-yellow-600"
-          >
-            Comprar
+            comprar
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -303,20 +201,160 @@
           </button>
         </div>
         <div
-          class="card-otros p-4 bg-white shadow-xl flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto"
+          class="card-otros p-3 bg-white shadow-xl flex flex-col items-center justify-center gap-3 dark:bg-slate-800"
+        >
+          <img
+            src="https://realplaza.vtexassets.com/arquivos/ids/33764260/image-1.jpg?v=638270458397030000"
+            alt=""
+            class="h-72"
+          />
+          <div>
+            <h2 class="text-xl">New Edition Chalina Harry Potter</h2>
+            <p class="text-yellow-400 font-semibold text-2xl">$50.00</p>
+          </div>
+          <button
+            class="bg-green-800 text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+          >
+            comprar
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 font-bold"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="card-otros p-3 bg-white shadow-xl flex flex-col items-center justify-center gap-3 dark:bg-slate-800"
+        >
+          <img
+            src="https://acdn-us.mitiendanube.com/stores/004/419/408/products/376900_b_collargryffindor-94641822dcb194779a17126702678615-1024-1024.jpg"
+            alt=""
+            class="h-72"
+          />
+          <div>
+            <h2 class="text-xl">New Edition Collar Harry Potter</h2>
+            <p class="text-yellow-400 font-semibold text-2xl">$120.00</p>
+          </div>
+          <button
+            class="bg-green-800 text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+          >
+            comprar
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 font-bold"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <h2
+          class="w-full text-center text-4xl text-yellow-400 font-extrabold mb-4 col-span-2"
+        >
+          Libros a la venta
+      </h2>
+      <div
+        class="contenedor-libros grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 dark:text-white"
+      >
+        
+        <div
+          class="card-libro w-full max-w-md mx-auto flex flex-col items-center justify-center gap-3 p-4 sm:p-8 bg-white shadow-xl dark:bg-slate-800"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHuhmuzRxV3ebY-s3ZZJDHD3zSTThdNHntyQ&s"
+            alt=""
+          />
+          <div class="w-full">
+            <h2>Libro De La Selva</h2>
+            <p class="text-yellow-400 font-semibold text-2xl">$120.00</p>
+          </div>
+          <button
+            class="bg-black text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+          >
+            comprar
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 font-bold"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="card-libro w-full max-w-md mx-auto flex flex-col items-center justify-center gap-3 p-4 sm:p-8 bg-white shadow-xl dark:bg-slate-800"
+        >
+          <img
+            src="https://www.hola.com/horizon/original_aspect_ratio/008340400605-los-mejores-libros-infantiles-para-celebrar-el-d-a-internacional-del-libro-infan.jpg"
+            alt=""
+            class="h-56"
+          />
+          <div class="w-full">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl ont-semibold">
+              Alicia y el cerebro maravilloso
+            </h2>
+            <p class="text-yellow-400 font-semibold text-2xl">$100.00</p>
+          </div>
+          <button
+            class="bg-black text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+          >
+            comprar
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 font-bold"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="card-libro w-full max-w-md mx-auto flex flex-col items-center justify-center gap-3 p-4 sm:p-8 bg-white shadow-xl dark:bg-slate-800"
         >
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8h3ibIrgSJRs5jO__2kQX8iVKkMw2oxzhQg&s"
             alt=""
-            class="h-64 object-cover rounded-md w-full"
+            class="h-56"
           />
-          <div class="text-center">
-            <h2 class="text-lg sm:text-xl font-semibold">Cinco Minutos Mas</h2>
-            <p class="text-yellow-400 font-bold text-xl sm:text-2xl">$70.00</p>
+          <div class="w-full">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold">Cinco Minutos Mas</h2>
+            <p class="text-yellow-400 font-semibold text-2xl">$70.00</p>
           </div>
-          <button 
-            class="bg-gradient-to-r from-yellow-700 to-yellow-500 dark:from-yellow-900 dark:to-yellow-700 text-yellow-200 p-3 sm:p-4 rounded-xl w-full text-xl font-bold flex items-center justify-center gap-1.5 transition-all duration-300 hover:to-yellow-300 dark:hover:to-yellow-600">
-            Comprar
+          <button
+            class="bg-black text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+          >
+            comprar
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -334,19 +372,21 @@
           </button>
         </div>
         <div
-          class="card-otros p-4 bg-white shadow-xl flex flex-col items-center justify-center gap-3 w-full max-w-md mx-auto"
+          class="card-libro w-full max-w-md mx-auto flex flex-col items-center justify-center gap-3 p-4 sm:p-8 bg-white shadow-xl dark:bg-slate-800"
         >
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0TO5FyY-kLIq_KYE7UmUucYDDpnas-bvNKw8qr7Ld8dhr0wH_oVCXhUzNGj6cydoue4&usqp=CAU"
             alt=""
-            class="h-64 object-cover rounded-md w-full"
+            class="h-56"
           />
-          <div class="text-center">
-            <h2 class="text-lg sm:text-xl font-semibold">El Patito Feo</h2>
-            <p class="text-yellow-400 font-bold text-xl sm:text-2xl">$300.00</p>
+          <div class="w-full">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold">El Patito Feo</h2>
+            <p class="text-yellow-400 font-semibold text-2xl">$300.00</p>
           </div>
-          <button class="bg-gradient-to-r from-yellow-700 to-yellow-500 dark:from-yellow-900 dark:to-yellow-700 text-yellow-200 p-3 sm:p-4 rounded-xl w-full text-xl font-bold flex items-center justify-center gap-1.5 transition-all duration-300 hover:to-yellow-300 dark:hover:to-yellow-600">
-            Comprar
+          <button
+            class="bg-black text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+          >
+            comprar
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -365,29 +405,11 @@
         </div>
       </div>
     </main>
-
-    <script>
-        const toggle = document.getElementById('toggleDark');
-        const root = document.documentElement;
-
-        // Al cargar la página, aplica la preferencia guardada
-        if (localStorage.getItem('theme') === 'dark') {
-        root.classList.add('dark');
-        } else {
-        root.classList.remove('dark');
-        }
-
-        toggle.addEventListener('click', () => {
-        root.classList.toggle('dark');
-        const theme = root.classList.contains('dark') ? 'dark' : 'light';
-        localStorage.setItem('theme', theme);
-        });
-    </script>
-    
-    <footer class="bg-[#fbe4c4] dark:bg-gray-900 text-black dark:text-white p-6 flex flex-col md:flex-row justify-around gap-6">
-
-      <div class="flex flex-col gap-3">
-        <h2 class="text-xl sm:text-2xl font-semibold">Informacion General</h2>
+    <footer
+      class="flex flex-col items-center justify-center gap-3 bg-[#fbe4c4] p-4 dark:bg-neutral-800 max-w-screen-xl mx-auto"
+    >
+      <div class="flex gap-3 flex-col">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold">informacion general</h2>
         <div class="flex gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -408,13 +430,13 @@
               d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
             />
           </svg>
-          <p class="text-base sm:text-lg">Zona Los Rosales #50 Calle #4</p>
+          <p class="text-xl">zona los rosales #50 calle #4</p>
         </div>
-        <h2 class="text-xl sm:text-2xl font-semibold">Redes Sociales</h2>
-        <ul class="flex flex-col gap-3 font-semibold text-xl">
+        <h2 class=" md:text-3xl lg:text-4xl font-semibold">Redes Sociales</h2>
+        <ul class="flex flex-col gap-2 text-lg sm:text-xl text-center sm:text-left">
           <li class="flex gap-3">
             <svg
-              class="w-6 h-6 text-blue-700 bg-white dark:text-white rounded-full"
+              class="w-6 h-6 text-blue-700 bg-white rounded-full"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -432,7 +454,7 @@
           </li>
           <li class="flex gap-3">
             <svg
-              class="w-6 h-6 text-gray-800 dark:text-white bg-white"
+              class="w-6 h-6 text-gray-800 bg-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -448,7 +470,7 @@
           </li>
           <li class="flex gap-3">
             <svg
-              class="w-6 h-6 text-amber-900 dark:text-white bg-white"
+              class="w-6 h-6 text-amber-900 bg-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -468,7 +490,7 @@
           </li>
           <li class="flex gap-3">
             <svg
-              class="w-6 h-6 text-gray-800 dark:text-white bg-white rounded-full"
+              class="w-6 h-6 text-gray-800 bg-white rounded-full"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -488,6 +510,17 @@
         </ul>
       </div>
     </footer>
-
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.querySelector(".btn");
+        const todo = document.querySelector(".todo");
+        if (btn && todo) {
+          btn.addEventListener("click", () => {
+            todo.classList.toggle("dark");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
