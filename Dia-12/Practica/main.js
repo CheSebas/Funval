@@ -1,80 +1,44 @@
-function mostrarMenu() {
-  let opcion = "";
+let opcion = "";
 
-  while (true) {
-    opcion = prompt(
-      "Calculadora de Áreas:\n" +
-        "1. Área de un Cuadrado\n" +
-        "2. Área de un Rectángulo\n" +
-        "3. Área de un Triángulo\n" +
-        "4. Salir\n\n" +
-        "Ingrese el número de la opción:",
-    );
+while (true) {
+  opcion = prompt("Calculadora de Áreas:\n1. Cuadrado\n2. Rectángulo\n3. Triángulo\n4. Salir");
 
-    if (opcion === null || opcion === "4") {
-      alert("Gracias por usar la calculadora.");
+  if (opcion === null || opcion === "4") {
+    console.log("Gracias por usar la calculadora.");
+    break;
+  }
+
+  switch (opcion) {
+    case "1":
+      let lado = parseFloat(prompt("Lado del cuadrado:"));
+      if (isNaN(lado) || lado <= 0) {
+        console.log("Dato inválido.");
+        break;
+      }
+      console.log("Área del Cuadrado =", lado * lado);
       break;
-    }
 
-    switch (opcion) {
-      case "1":
-        calcularCuadrado();
+    case "2":
+      let baseRect = parseFloat(prompt("Base del rectángulo:"));
+      let alturaRect = parseFloat(prompt("Altura del rectángulo:"));
+      if (isNaN(baseRect) || isNaN(alturaRect) || baseRect <= 0 || alturaRect <= 0) {
+        console.log("Datos inválidos.");
         break;
-      case "2":
-        calcularRectangulo();
+      }
+      console.log("Área del Rectángulo =", baseRect * alturaRect);
+      break;
+
+    case "3":
+      let baseTri = parseFloat(prompt("Base del triángulo:"));
+      let alturaTri = parseFloat(prompt("Altura del triángulo:"));
+      if (isNaN(baseTri) || isNaN(alturaTri) || baseTri <= 0 || alturaTri <= 0) {
+        console.log("Datos inválidos.");
         break;
-      case "3":
-        calcularTriangulo();
-        break;
-      default:
-        alert("Opción no válida. Intente nuevamente.");
-    }
+      }
+      console.log("Área del Triángulo =", (baseTri * alturaTri) / 2);
+      break;
+
+    default:
+      console.log("Opción no válida.");
   }
-}
-
-function calcularCuadrado() {
-  let lado = prompt("Ingrese el valor del lado del cuadrado:");
-  lado = parseFloat(lado);
-
-  if (isNaN(lado) || lado <= 0) {
-    alert("Dato inválido. Ingrese un número positivo.");
-    return;
-  }
-
-  let area = lado * lado;
-  mostrarResultado(`Área del Cuadrado = ${area}`);
-}
-
-function calcularRectangulo() {
-  let base = prompt("Ingrese la base del rectángulo:");
-  let altura = prompt("Ingrese la altura del rectángulo:");
-  base = parseFloat(base);
-  altura = parseFloat(altura);
-
-  if (isNaN(base) || isNaN(altura) || base <= 0 || altura <= 0) {
-    alert("Datos inválidos. Ingrese números positivos.");
-    return;
-  }
-
-  let area = base * altura;
-  mostrarResultado(`Área del Rectángulo = ${area}`);
-}
-
-function calcularTriangulo() {
-  let base = prompt("Ingrese la base del triángulo:");
-  let altura = prompt("Ingrese la altura del triángulo:");
-  base = parseFloat(base);
-  altura = parseFloat(altura);
-
-  if (isNaN(base) || isNaN(altura) || base <= 0 || altura <= 0) {
-    alert("Datos inválidos. Ingrese números positivos.");
-    return;
-  }
-
-  let area = (base * altura) / 2;
-  mostrarResultado(`Área del Triángulo = ${area}`);
-}
-
-function mostrarResultado(texto) {
-  document.getElementById("resultado").innerText = texto;
 }
