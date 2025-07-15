@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html
-  lang="en"
-  class="bg-white text-black dark:bg-neutral-900 dark:text-white todo"
->
+<!doctype html>
+<html lang="en" class="todo bg-white text-black dark:bg-neutral-900 dark:text-white">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +8,7 @@
   </head>
   <body>
     <header
-      class="flex items-center justify-around bg-[#fbe4c4] dark:bg-neutral-800 sm:justify-between sm:px-7"
+      class="flex items-center justify-around bg-[#fbe4c4] sm:justify-between sm:px-7 dark:bg-neutral-800"
     >
       <div>
         <svg
@@ -28,14 +25,18 @@
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
-        <ul class="hidden sm:flex gap-2.5 md:gap-4 lg:gap-6 xl:gap-10 text-md">
-          <li><button class="hover:bg-white p-2 rounded-2xl">Inicio</button></li>
-          <li><button class="hover:bg-white p-2 rounded-2xl">Categorias</button></li>
-          <li><button class="hover:bg-white p-2 rounded-2xl">Material Exclusivo</button></li>
-          <li><button class="hover:bg-white p-2 rounded-2xl">Libros</button></li>
+        <ul class="text-md hidden gap-2.5 sm:flex md:gap-4 lg:gap-6 xl:gap-10">
+          <li><button class="rounded-2xl p-2 hover:bg-white">Inicio</button></li>
+          <li><button class="rounded-2xl p-2 hover:bg-white">Categorias</button></li>
+          <li><button class="rounded-2xl p-2 hover:bg-white">Material Exclusivo</button></li>
+          <li><button class="rounded-2xl p-2 hover:bg-white">Libros</button></li>
         </ul>
       </div>
-      <img src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-10/img/libroslogo1-Photoroom.png" alt="" class="h-24" />
+      <img
+        src="https://raw.githubusercontent.com/kevindandrew/Funval-G4/refs/heads/master/dia-10/img/libroslogo1-Photoroom.png"
+        alt=""
+        class="h-24"
+      />
       <div class="flex items-center justify-center gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -65,15 +66,18 @@
             d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
           />
         </svg>
-        <h2 class="text-md hidden sm:flex font-semibold">$20.00</h2>
-        <button class="btn bg-white p-2 rounded-2xl dark:text-black" aria-label="Activar modo oscuro">
+        <h2 class="text-md hidden font-semibold sm:flex">$20.00</h2>
+        <button
+          class="btn rounded-2xl bg-white p-2 dark:text-black"
+          aria-label="Activar modo oscuro"
+        >
           Dark Mode
         </button>
       </div>
     </header>
-    <main class="p-7 flex flex-col gap-4 bg-gray-100 dark:bg-black max-w-screen-xl mx-auto">
+    <main class="mx-auto flex max-w-screen-xl flex-col gap-4 bg-gray-100 p-7 dark:bg-black">
       <div
-        class="carusel overflow-x-scroll md:overflow-hidden flex items-center justify-around gap-10 px-3"
+        class="carusel flex items-center justify-around gap-10 overflow-x-scroll px-3 md:overflow-hidden"
       >
         <div class="shrink-0">
           <img
@@ -90,80 +94,79 @@
           />
         </div>
         <div
-          class="shrink-0 h-72 w-96 bg-[url(https://bestofnj.com/wp-content/uploads/2021/05/Best-Independent-Bookstores-Hero.jpg)] flex items-center justify-center"
+          class="flex h-72 w-96 shrink-0 items-center justify-center bg-[url(https://bestofnj.com/wp-content/uploads/2021/05/Best-Independent-Bookstores-Hero.jpg)]"
         >
-          <h2 class="text-yellow-300 text-3xl font-extrabold text-center">
+          <h2 class="text-center text-3xl font-extrabold text-yellow-300">
             Tu escondite secreto y comodo para leer
           </h2>
         </div>
         <div
-          class="shrink-0 h-72 w-96 bg-[url(https://www.ipgbook.com/blog/wp-content/uploads/2013/08/20080108_typegallery2.jpg)] flex items-center justify-center"
+          class="flex h-72 w-96 shrink-0 items-center justify-center bg-[url(https://www.ipgbook.com/blog/wp-content/uploads/2013/08/20080108_typegallery2.jpg)]"
         >
-          <h2 class="text-yellow-300 text-3xl font-extrabold text-center">
+          <h2 class="text-center text-3xl font-extrabold text-yellow-300">
             siempre comodo siempre a tu disposicion
           </h2>
         </div>
         <div
-          class="shrink-0 h-72 w-96 bg-[url(https://www.toxel.com/wp-content/uploads/2012/02/kidsrepublic15.jpg)] flex items-center justify-center"
+          class="flex h-72 w-96 shrink-0 items-center justify-center bg-[url(https://www.toxel.com/wp-content/uploads/2012/02/kidsrepublic15.jpg)]"
         >
-          <h2 class="text-yellow-300 text-3xl font-extrabold text-center">
+          <h2 class="text-center text-3xl font-extrabold text-yellow-300">
             un espacio para tu niño interior
           </h2>
         </div>
-
       </div>
       <div
-        class="contenedor-categorias grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 place-items-center gap-4"
+        class="contenedor-categorias grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4"
       >
         <div
-          class="card-categoria bg-black flex flex-col items-center justify-center p-3 rounded-2xl sm:p-7"
+          class="card-categoria flex flex-col items-center justify-center rounded-2xl bg-black p-3 sm:p-7"
         >
           <img
             src="https://images.cdn2.buscalibre.com/fit-in/360x360/7e/b3/7eb3e5916d2fcd844888da213fe0ba40.jpg"
             alt=""
             class="w-48 rounded-2xl"
           />
-          <h2 class="text-yellow-500 font-extrabold text-3xl">INFANTILES</h2>
+          <h2 class="text-3xl font-extrabold text-yellow-500">INFANTILES</h2>
         </div>
         <div
-          class="card-categoria bg-black flex flex-col items-center justify-center p-3 rounded-2xl sm:p-7"
+          class="card-categoria flex flex-col items-center justify-center rounded-2xl bg-black p-3 sm:p-7"
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Baldor.jpg/330px-Baldor.jpg"
             alt=""
             class="w-48 rounded-2xl"
           />
-          <h2 class="text-yellow-500 font-extrabold text-3xl">CIENCIA</h2>
+          <h2 class="text-3xl font-extrabold text-yellow-500">CIENCIA</h2>
         </div>
         <div
-          class="card-categoria bg-black flex flex-col items-center justify-center p-3 rounded-2xl sm:p-7"
+          class="card-categoria flex flex-col items-center justify-center rounded-2xl bg-black p-3 sm:p-7"
         >
           <img
             src="https://www.penguinlibros.com/es/6017464-home_default/harry-potter-y-el-prisionero-de-azkaban-harry-potter-edicion-con-ilustraciones-de-xavier-bonet-3.webp"
             alt=""
             class="w-48 rounded-2xl"
           />
-          <h2 class="text-yellow-500 font-extrabold text-3xl">FANTASIA</h2>
+          <h2 class="text-3xl font-extrabold text-yellow-500">FANTASIA</h2>
         </div>
         <div
-          class="card-categoria bg-black flex flex-col items-center justify-center p-3 rounded-2xl sm:p-7"
+          class="card-categoria flex flex-col items-center justify-center rounded-2xl bg-black p-3 sm:p-7"
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/en/c/c9/DB_Tank%C5%8Dbon.png"
             alt=""
             class="w-48 rounded-2xl"
           />
-          <h2 class="text-yellow-500 font-extrabold text-3xl">MANGA</h2>
+          <h2 class="text-3xl font-extrabold text-yellow-500">MANGA</h2>
         </div>
       </div>
-      <div class="contenedor-otro grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <h2
-          class="w-full text-center text-4xl text-yellow-400 font-extrabold mb-4 sm:col-span-2"
-        >
+      <div
+        class="contenedor-otro grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <h2 class="mb-4 w-full text-center text-4xl font-extrabold text-yellow-400 sm:col-span-2">
           Material Exclusivo
         </h2>
         <div
-          class="card-otros p-3 bg-white shadow-xl flex flex-col items-center justify-center gap-3 dark:bg-slate-800 sm:row-span-2"
+          class="card-otros flex flex-col items-center justify-center gap-3 bg-white p-3 shadow-xl sm:row-span-2 dark:bg-slate-800"
         >
           <img
             src="https://www.frikimasters.es/3489-large_default/varita-magica-harry-potter-harry-potter-30-cm.jpg"
@@ -178,10 +181,10 @@
 
           <div>
             <h2 class="text-xl">New Edition varita de Ron Weasley</h2>
-            <p class="text-yellow-400 font-semibold text-2xl">$35.00</p>
+            <p class="text-2xl font-semibold text-yellow-400">$35.00</p>
           </div>
           <button
-            class="bg-green-800 text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+            class="flex w-[80%] items-center justify-center gap-1.5 rounded-2xl bg-green-800 p-4 text-2xl font-bold text-yellow-600"
           >
             comprar
             <svg
@@ -201,7 +204,7 @@
           </button>
         </div>
         <div
-          class="card-otros p-3 bg-white shadow-xl flex flex-col items-center justify-center gap-3 dark:bg-slate-800"
+          class="card-otros flex flex-col items-center justify-center gap-3 bg-white p-3 shadow-xl dark:bg-slate-800"
         >
           <img
             src="https://realplaza.vtexassets.com/arquivos/ids/33764260/image-1.jpg?v=638270458397030000"
@@ -210,10 +213,10 @@
           />
           <div>
             <h2 class="text-xl">New Edition Chalina Harry Potter</h2>
-            <p class="text-yellow-400 font-semibold text-2xl">$50.00</p>
+            <p class="text-2xl font-semibold text-yellow-400">$50.00</p>
           </div>
           <button
-            class="bg-green-800 text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+            class="flex w-[80%] items-center justify-center gap-1.5 rounded-2xl bg-green-800 p-4 text-2xl font-bold text-yellow-600"
           >
             comprar
             <svg
@@ -233,7 +236,7 @@
           </button>
         </div>
         <div
-          class="card-otros p-3 bg-white shadow-xl flex flex-col items-center justify-center gap-3 dark:bg-slate-800"
+          class="card-otros flex flex-col items-center justify-center gap-3 bg-white p-3 shadow-xl dark:bg-slate-800"
         >
           <img
             src="https://acdn-us.mitiendanube.com/stores/004/419/408/products/376900_b_collargryffindor-94641822dcb194779a17126702678615-1024-1024.jpg"
@@ -242,10 +245,10 @@
           />
           <div>
             <h2 class="text-xl">New Edition Collar Harry Potter</h2>
-            <p class="text-yellow-400 font-semibold text-2xl">$120.00</p>
+            <p class="text-2xl font-semibold text-yellow-400">$120.00</p>
           </div>
           <button
-            class="bg-green-800 text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+            class="flex w-[80%] items-center justify-center gap-1.5 rounded-2xl bg-green-800 p-4 text-2xl font-bold text-yellow-600"
           >
             comprar
             <svg
@@ -265,17 +268,14 @@
           </button>
         </div>
       </div>
-      <h2
-          class="w-full text-center text-4xl text-yellow-400 font-extrabold mb-4 col-span-2"
-        >
-          Libros a la venta
+      <h2 class="col-span-2 mb-4 w-full text-center text-4xl font-extrabold text-yellow-400">
+        Libros a la venta
       </h2>
       <div
-        class="contenedor-libros grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 dark:text-white"
+        class="contenedor-libros grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 dark:text-white"
       >
-        
         <div
-          class="card-libro w-full max-w-md mx-auto flex flex-col items-center justify-center gap-3 p-4 sm:p-8 bg-white shadow-xl dark:bg-slate-800"
+          class="card-libro mx-auto flex w-full max-w-md flex-col items-center justify-center gap-3 bg-white p-4 shadow-xl sm:p-8 dark:bg-slate-800"
         >
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHuhmuzRxV3ebY-s3ZZJDHD3zSTThdNHntyQ&s"
@@ -283,10 +283,10 @@
           />
           <div class="w-full">
             <h2>Libro De La Selva</h2>
-            <p class="text-yellow-400 font-semibold text-2xl">$120.00</p>
+            <p class="text-2xl font-semibold text-yellow-400">$120.00</p>
           </div>
           <button
-            class="bg-black text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+            class="flex w-[80%] items-center justify-center gap-1.5 rounded-2xl bg-black p-4 text-2xl font-bold text-yellow-600"
           >
             comprar
             <svg
@@ -306,7 +306,7 @@
           </button>
         </div>
         <div
-          class="card-libro w-full max-w-md mx-auto flex flex-col items-center justify-center gap-3 p-4 sm:p-8 bg-white shadow-xl dark:bg-slate-800"
+          class="card-libro mx-auto flex w-full max-w-md flex-col items-center justify-center gap-3 bg-white p-4 shadow-xl sm:p-8 dark:bg-slate-800"
         >
           <img
             src="https://www.hola.com/horizon/original_aspect_ratio/008340400605-los-mejores-libros-infantiles-para-celebrar-el-d-a-internacional-del-libro-infan.jpg"
@@ -314,13 +314,13 @@
             class="h-56"
           />
           <div class="w-full">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl ont-semibold">
+            <h2 class="ont-semibold text-2xl md:text-3xl lg:text-4xl">
               Alicia y el cerebro maravilloso
             </h2>
-            <p class="text-yellow-400 font-semibold text-2xl">$100.00</p>
+            <p class="text-2xl font-semibold text-yellow-400">$100.00</p>
           </div>
           <button
-            class="bg-black text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+            class="flex w-[80%] items-center justify-center gap-1.5 rounded-2xl bg-black p-4 text-2xl font-bold text-yellow-600"
           >
             comprar
             <svg
@@ -340,7 +340,7 @@
           </button>
         </div>
         <div
-          class="card-libro w-full max-w-md mx-auto flex flex-col items-center justify-center gap-3 p-4 sm:p-8 bg-white shadow-xl dark:bg-slate-800"
+          class="card-libro mx-auto flex w-full max-w-md flex-col items-center justify-center gap-3 bg-white p-4 shadow-xl sm:p-8 dark:bg-slate-800"
         >
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8h3ibIrgSJRs5jO__2kQX8iVKkMw2oxzhQg&s"
@@ -348,11 +348,11 @@
             class="h-56"
           />
           <div class="w-full">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold">Cinco Minutos Mas</h2>
-            <p class="text-yellow-400 font-semibold text-2xl">$70.00</p>
+            <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">Cinco Minutos Mas</h2>
+            <p class="text-2xl font-semibold text-yellow-400">$70.00</p>
           </div>
           <button
-            class="bg-black text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+            class="flex w-[80%] items-center justify-center gap-1.5 rounded-2xl bg-black p-4 text-2xl font-bold text-yellow-600"
           >
             comprar
             <svg
@@ -372,7 +372,7 @@
           </button>
         </div>
         <div
-          class="card-libro w-full max-w-md mx-auto flex flex-col items-center justify-center gap-3 p-4 sm:p-8 bg-white shadow-xl dark:bg-slate-800"
+          class="card-libro mx-auto flex w-full max-w-md flex-col items-center justify-center gap-3 bg-white p-4 shadow-xl sm:p-8 dark:bg-slate-800"
         >
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0TO5FyY-kLIq_KYE7UmUucYDDpnas-bvNKw8qr7Ld8dhr0wH_oVCXhUzNGj6cydoue4&usqp=CAU"
@@ -380,11 +380,11 @@
             class="h-56"
           />
           <div class="w-full">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold">El Patito Feo</h2>
-            <p class="text-yellow-400 font-semibold text-2xl">$300.00</p>
+            <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">El Patito Feo</h2>
+            <p class="text-2xl font-semibold text-yellow-400">$300.00</p>
           </div>
           <button
-            class="bg-black text-yellow-600 p-4 rounded-2xl w-[80%] text-2xl font-bold flex items-center justify-center gap-1.5"
+            class="flex w-[80%] items-center justify-center gap-1.5 rounded-2xl bg-black p-4 text-2xl font-bold text-yellow-600"
           >
             comprar
             <svg
@@ -406,10 +406,10 @@
       </div>
     </main>
     <footer
-      class="flex flex-col items-center justify-center gap-3 bg-[#fbe4c4] p-4 dark:bg-neutral-800 max-w-screen-xl mx-auto"
+      class="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-3 bg-[#fbe4c4] p-4 dark:bg-neutral-800"
     >
-      <div class="flex gap-3 flex-col">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold">informacion general</h2>
+      <div class="flex flex-col gap-3">
+        <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">informacion general</h2>
         <div class="flex gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -432,11 +432,11 @@
           </svg>
           <p class="text-xl">zona los rosales #50 calle #4</p>
         </div>
-        <h2 class=" md:text-3xl lg:text-4xl font-semibold">Redes Sociales</h2>
-        <ul class="flex flex-col gap-2 text-lg sm:text-xl text-center sm:text-left">
+        <h2 class="font-semibold md:text-3xl lg:text-4xl">Redes Sociales</h2>
+        <ul class="flex flex-col gap-2 text-center text-lg sm:text-left sm:text-xl">
           <li class="flex gap-3">
             <svg
-              class="w-6 h-6 text-blue-700 bg-white rounded-full"
+              class="h-6 w-6 rounded-full bg-white text-blue-700"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -454,7 +454,7 @@
           </li>
           <li class="flex gap-3">
             <svg
-              class="w-6 h-6 text-gray-800 bg-white"
+              class="h-6 w-6 bg-white text-gray-800"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -470,7 +470,7 @@
           </li>
           <li class="flex gap-3">
             <svg
-              class="w-6 h-6 text-amber-900 bg-white"
+              class="h-6 w-6 bg-white text-amber-900"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -490,7 +490,7 @@
           </li>
           <li class="flex gap-3">
             <svg
-              class="w-6 h-6 text-gray-800 bg-white rounded-full"
+              class="h-6 w-6 rounded-full bg-white text-gray-800"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -510,7 +510,7 @@
         </ul>
       </div>
     </footer>
-    
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const btn = document.querySelector(".btn");

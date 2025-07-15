@@ -74,7 +74,6 @@ const constSimbolo = Symbol("constSymbol");
 // constBigInt = 123n;
 // constSimbolo = Symbol("otro");
 
-
 /*OPERADORES LOGICOS  */
 
 // 1. Crea una variable para cada operación aritmética
@@ -85,7 +84,6 @@ let division = 25 / 5;
 let modulo = 10 % 3;
 let potencia = 2 ** 3;
 
-
 // 2. Crea una variable para cada tipo de operación de asignación, que haga uso de las variables utilizadas para las operaciones aritméticas
 let x = 10;
 
@@ -95,14 +93,12 @@ x *= 2;
 x /= 4;
 x %= 4;
 
-
 // 3. Imprime 5 comparaciones verdaderas con diferentes operadores de comparación
 console.log(10 > 5);
 console.log(7 <= 7);
 console.log("5" == 5);
 console.log(3 !== 4);
 console.log(6 === 6);
-
 
 // 4. Imprime 5 comparaciones falsas con diferentes operadores de comparación
 console.log(10 < 5);
@@ -142,14 +138,13 @@ console.log(mensaje);
 // 10. Combina operadores aritméticos, de comparáción y lógicas
 let a = 10;
 let b = 5;
-let resultadoFinal = (a + b > 10) && (a - b < 10) || (a * b === 50);
+let resultadoFinal = (a + b > 10 && a - b < 10) || a * b === 50;
 
 console.log(resultadoFinal);
 
-
-// Utilizando el operador ternario determinar si una variable de 
-// tipo usuario y de tipo password coinciden con admin y 123456 
-// si el login es correcto mostrar datos correctos si el login falla 
+// Utilizando el operador ternario determinar si una variable de
+// tipo usuario y de tipo password coinciden con admin y 123456
+// si el login es correcto mostrar datos correctos si el login falla
 // en alguno de ambos o en ambos mostrar datos incorrectos
 
 // Declaración de variables
@@ -157,9 +152,8 @@ let usuario = "admin";
 let password = "123456";
 
 // Verificación con operador ternario
-let mensaje1 = (usuario === "admin" && password === "123456")
-  ? "Datos correctos"
-  : "Datos incorrectos";
+let mensaje1 =
+  usuario === "admin" && password === "123456" ? "Datos correctos" : "Datos incorrectos";
 
 // Mostrar resultado
 console.log(mensaje1);
