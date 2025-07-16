@@ -118,96 +118,152 @@
 
 // realizarPedido();
 
-function obtenerPrecio(opcion) {
-  switch (opcion) {
-    case 1:
-      return 35;
-    case 2:
-      return 40;
-    case 3:
-      return 25;
-    case 4:
-      return 30;
-    case 5:
-      return 20;
-    default:
-      return 0;
-  }
-}
+// function obtenerPrecio(opcion) {
+//   switch (opcion) {
+//     case 1:
+//       return 35;
+//     case 2:
+//       return 40;
+//     case 3:
+//       return 25;
+//     case 4:
+//       return 30;
+//     case 5:
+//       return 20;
+//     default:
+//       return 0;
+//   }
+// }
 
-function calcularTotalFinal(subtotal, nombreCliente) {
-  let totalConDescuento = subtotal;
-  const umbralDescuento = 120;
-  const porcentajeDescuento = 0.05;
+// function calcularTotalFinal(subtotal, nombreCliente) {
+//   let totalConDescuento = subtotal;
+//   const umbralDescuento = 120;
+//   const porcentajeDescuento = 0.05;
 
-  if (subtotal > umbralDescuento) {
-    totalConDescuento = subtotal * (1 - porcentajeDescuento);
-    console.log(`¡Felicidades ${nombreCliente}! Obtuviste un 5% de descuento.`);
-    console.log(`Subtotal: $${subtotal.toFixed(2)}`);
-    console.log(`Descuento aplicado: $${(subtotal * porcentajeDescuento).toFixed(2)}`);
-  }
+//   if (subtotal > umbralDescuento) {
+//     totalConDescuento = subtotal * (1 - porcentajeDescuento);
+//     console.log(`¡Felicidades ${nombreCliente}! Obtuviste un 5% de descuento.`);
+//     console.log(`Subtotal: $${subtotal.toFixed(2)}`);
+//     console.log(`Descuento aplicado: $${(subtotal * porcentajeDescuento).toFixed(2)}`);
+//   }
 
-  return totalConDescuento;
-}
+//   return totalConDescuento;
+// }
 
-function mostrarFactura(nombreCliente, totalFinal) {
-  console.log("\n=== FACTURA FINAL ===");
-  console.log(`Cliente: ${nombreCliente}`);
-  console.log(`Total a pagar: $${totalFinal.toFixed(2)}`);
-  console.log("Gracias por su compra en Don Baratón!");
-  console.log("======================\n");
-}
+// function mostrarFactura(nombreCliente, totalFinal) {
+//   console.log("\n=== FACTURA FINAL ===");
+//   console.log(`Cliente: ${nombreCliente}`);
+//   console.log(`Total a pagar: $${totalFinal.toFixed(2)}`);
+//   console.log("Gracias por su compra en Don Baratón!");
+//   console.log("======================\n");
+// }
 
-function realizarPedido() {
-  let nombreCliente = prompt("Bienvenido a Don Baratón, ¿Cuál es tu nombre?");
-  let total = 0;
-  let seguirPedido = true;
-  let pidioTacos = false;
+// function realizarPedido() {
+//   let nombreCliente = prompt("Bienvenido a Don Baratón, ¿Cuál es tu nombre?");
+//   let total = 0;
+//   let seguirPedido = true;
+//   let pidioTacos = false;
 
-  let mensajeMenu = `Menú del día:
-    1. Pollo a la brasa - $35
-    2. Lomo saltado - $40
-    3. Tacos - $25
-    4. Hamburguesa - $30
-    5. Ensalada - $20
-    0. Salir
-    PROMOCIÓN: Obtén 5% de descuento si tu compra supera los $120`;
+//   let mensajeMenu = `Menú del día:
+//     1. Pollo a la brasa - $35
+//     2. Lomo saltado - $40
+//     3. Tacos - $25
+//     4. Hamburguesa - $30
+//     5. Ensalada - $20
+//     0. Salir
+//     PROMOCIÓN: Obtén 5% de descuento si tu compra supera los $120`;
 
-  while (seguirPedido) {
-    let eleccion = prompt(`${mensajeMenu}\n¿Qué deseas pedir? Ingresa el número del plato:`);
-    let opcion = parseInt(eleccion);
+//   while (seguirPedido) {
+//     let eleccion = prompt(`${mensajeMenu}\n¿Qué deseas pedir? Ingresa el número del plato:`);
+//     let opcion = parseInt(eleccion);
 
-    if (isNaN(opcion) || opcion < 0 || opcion > 5) {
-      alert("Por favor, ingresa un número válido del 0 al 5.");
-      continue;
+//     if (isNaN(opcion) || opcion < 0 || opcion > 5) {
+//       alert("Por favor, ingresa un número válido del 0 al 5.");
+//       continue;
+//     }
+
+//     if (opcion === 3) {
+//       pidioTacos = true;
+//     }
+
+//     if (opcion === 0) {
+//       break;
+//     }
+
+//     let precio = obtenerPrecio(opcion);
+//     total += precio;
+
+//     seguirPedido = confirm("¿Deseas pedir otro plato?");
+//   }
+
+//   let totalFinal = calcularTotalFinal(total, nombreCliente);
+
+//   if (pidioTacos) {
+//     console.log("¡Gracias por elegir nuestros famosos Tacos!");
+//   }
+
+//   if (total === 0) {
+//     console.log(`No se realizó ningún pedido. ¡Gracias por visitar Don Baratón, ${nombreCliente}!`);
+//     return;
+//   }
+
+//   mostrarFactura(nombreCliente, totalFinal);
+// }
+
+// realizarPedido();
+
+/* 
+  REALIZAR UNA CALCULADORA CON UN MENU
+  MULTIPLICAR
+  SUMAR
+  RESTAR
+  DIVIDIR
+  2 NUMEROS
+  vamos a crear arrowfunction para cada operacion y hacer uso de ellas 
+*/
+
+// Operaciones usando arrow functions
+let sumar = (a, b) => a + b;
+let restar = (a, b) => a - b;
+let multiplicar = (a, b) => a * b;
+let dividir = (a, b) => a / b;
+
+// Mostrar menú y pedir opción al usuario
+let opcion = prompt(
+  `Calculadora simple:
+  1. Sumar
+  2. Restar
+  3. Multiplicar
+  4. Dividir`,
+);
+
+// Pedir números
+let num1 = parseFloat(prompt("Ingresa el primer número:"));
+let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+let resultado;
+
+// Elegir operación con switch
+switch (opcion) {
+  case "1":
+    resultado = sumar(num1, num2);
+    alert("El resultado de la suma es: " + resultado);
+    break;
+  case "2":
+    resultado = restar(num1, num2);
+    alert("El resultado de la resta es: " + resultado);
+    break;
+  case "3":
+    resultado = multiplicar(num1, num2);
+    alert("El resultado de la multiplicación es: " + resultado);
+    break;
+  case "4":
+    if (num2 === 0) {
+      alert("Error: no se puede dividir entre 0");
+    } else {
+      resultado = dividir(num1, num2);
+      alert("El resultado de la división es: " + resultado);
     }
-
-    if (opcion === 3) {
-      pidioTacos = true;
-    }
-
-    if (opcion === 0) {
-      break;
-    }
-
-    let precio = obtenerPrecio(opcion);
-    total += precio;
-
-    seguirPedido = confirm("¿Deseas pedir otro plato?");
-  }
-
-  let totalFinal = calcularTotalFinal(total, nombreCliente);
-
-  if (pidioTacos) {
-    console.log("¡Gracias por elegir nuestros famosos Tacos!");
-  }
-
-  if (total === 0) {
-    console.log(`No se realizó ningún pedido. ¡Gracias por visitar Don Baratón, ${nombreCliente}!`);
-    return;
-  }
-
-  mostrarFactura(nombreCliente, totalFinal);
+    break;
+  default:
+    alert("Opción inválida");
 }
-
-realizarPedido();
