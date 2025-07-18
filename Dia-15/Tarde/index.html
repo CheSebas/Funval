@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="output.css" />
+    <title>dia 15 Tarde</title>
+  </head>
+  <body class="flex min-h-screen flex-col items-center bg-gray-100 p-6">
+    <h1 class="mb-6 text-3xl font-bold">Productos Disponibles</h1>
+
+    <!-- Productos -->
+    <div
+      id="contenedor-productos"
+      class="mb-8 grid w-full max-w-3xl grid-cols-1 gap-4 md:grid-cols-2"
+    >
+    </div>
+
+    <!-- Compras -->
+    <div class="w-full max-w-3xl rounded bg-white p-4 shadow-md">
+      <h2 class="mb-4 text-2xl font-semibold">Lista de Compras</h2>
+      <ul id="lista-compras" class="space-y-2">
+      </ul>
+      <p class="mt-4 text-xl font-bold">Total: $<span id="total-compra">0</span></p>
+    </div>
+  </body>
+</html>
