@@ -8,31 +8,39 @@ const pickOBtn = document.getElementById("pick-o");
 const vsCpuBtn = document.getElementById("vs-cpu");
 const vsPlayerBtn = document.getElementById("vs-player");
 
-let playerMark = "X"; // Por defecto
+let playerMark = "X";
 
-// Selección de marca
+// === Actualiza visualmente el botón seleccionado ===
+function updateMarkSelection() {
+  if (playerMark === "X") {
+    pickXBtn.classList.add("bg-[#A8BFC933]");
+    pickOBtn.classList.remove("bg-[#A8BFC933]");
+  } else {
+    pickOBtn.classList.add("bg-[#A8BFC933]");
+    pickXBtn.classList.remove("bg-[#A8BFC933]");
+  }
+}
+
+// === Eventos de selección de marca ===
 pickXBtn.addEventListener("click", () => {
   playerMark = "X";
-  pickXBtn.classList.add("bg-silver");
-  pickOBtn.classList.remove("bg-silver");
+  updateMarkSelection();
 });
 
 pickOBtn.addEventListener("click", () => {
   playerMark = "O";
-  pickOBtn.classList.add("bg-silver");
-  pickXBtn.classList.remove("bg-silver");
+  updateMarkSelection();
 });
 
-// Iniciar juego vs Player
+// === Iniciar juego vs Player ===
 vsPlayerBtn.addEventListener("click", () => {
   startScreen.classList.add("hidden");
   gameBoard.classList.remove("hidden");
-  // Aquí puedes setear el jugador inicial si lo necesitas
-  currentPlayer = "X"; // Siempre comienza X según regla
+  currentPlayer = "X"; // X siempre inicia
   resetGame();
 });
 
-// Iniciar juego vs CPU (no funcional por ahora)
+// === Iniciar juego vs CPU (no implementado aún) ===
 vsCpuBtn.addEventListener("click", () => {
   alert("Modo CPU aún no implementado.");
 });
