@@ -1,28 +1,74 @@
+// ===Inicio===
+const startScreen = document.getElementById("start-screen");
+const gameBoard = document.getElementById("game-board");
+
+const pickXBtn = document.getElementById("pick-x");
+const pickOBtn = document.getElementById("pick-o");
+
+const vsCpuBtn = document.getElementById("vs-cpu");
+const vsPlayerBtn = document.getElementById("vs-player");
+
+let playerMark = "X"; // Por defecto
+
+// Selección de marca
+pickXBtn.addEventListener("click", () => {
+  playerMark = "X";
+  pickXBtn.classList.add("bg-silver");
+  pickOBtn.classList.remove("bg-silver");
+});
+
+pickOBtn.addEventListener("click", () => {
+  playerMark = "O";
+  pickOBtn.classList.add("bg-silver");
+  pickXBtn.classList.remove("bg-silver");
+});
+
+// Iniciar juego vs Player
+vsPlayerBtn.addEventListener("click", () => {
+  startScreen.classList.add("hidden");
+  gameBoard.classList.remove("hidden");
+  // Aquí puedes setear el jugador inicial si lo necesitas
+  currentPlayer = "X"; // Siempre comienza X según regla
+  resetGame();
+});
+
+// Iniciar juego vs CPU (no funcional por ahora)
+vsCpuBtn.addEventListener("click", () => {
+  alert("Modo CPU aún no implementado.");
+});
+
+// ===Juego===
 const boardCells = document.querySelectorAll("main > div");
 const turnIndicator = document.getElementById("turn");
-const modal = document.getElementById("restartModal");
+
+const retryModal = document.getElementById("retryModal");
+const nextRoundModal = document.getElementById("nextRoundModal");
+
+const cancelRetryBtn = document.getElementById("cancelRetry");
+const confirmRetryBtn = document.getElementById("confirmRetry");
+const nextRoundBtn = document.getElementById("nextRoundBtn");
+const endMessage = document.getElementById("endMessage");
+
 const retryBtn = document.getElementById("retryBtn");
-const cancelBtn = modal.querySelector("button:first-child");
-const confirmBtn = modal.querySelector("button:last-child");
+
+const scoreXEl = document.querySelector("#score-x span");
+const scoreOEl = document.querySelector("#score-o span");
+const scoreTieEl = document.querySelector("#score-tie span");
 
 let currentPlayer = "X";
 let board = Array(9).fill(null);
 let gameOver = false;
 let score = { X: 0, O: 0, TIE: 0 };
 
-const scoreXEl = document.querySelector("#score-x span");
-const scoreOEl = document.querySelector("#score-o span");
-const scoreTieEl = document.querySelector("#score-tie span");
-
 const winCombos = [
   [0, 1, 2],
   [3, 4, 5],
-  [6, 7, 8], // filas
+  [6, 7, 8],
   [0, 3, 6],
   [1, 4, 7],
-  [2, 5, 8], // columnas
+  [2, 5, 8],
   [0, 4, 8],
-  [2, 4, 6], // diagonales
+  [2, 4, 6],
 ];
 
 function handleClick(e, index) {
@@ -52,17 +98,16 @@ function checkWinner() {
 }
 
 function showEndMessage(message) {
-  modal.classList.remove('hidden');
-  modal.querySelector('p').textContent = message;
-  confirmBtn.textContent = 'Next Round';
+  endMessage.textContent = message;
+  nextRoundModal.classList.remove("hidden");
 
-  if (message.includes('X')) {
+  if (message.includes("X")) {
     score.X++;
     scoreXEl.textContent = score.X;
-  } else if (message.includes('O')) {
+  } else if (message.includes("O")) {
     score.O++;
     scoreOEl.textContent = score.O;
-  } else if (message.includes('Tie')) {
+  } else {
     score.TIE++;
     scoreTieEl.textContent = score.TIE;
   }
@@ -71,9 +116,9 @@ function showEndMessage(message) {
 function resetGame() {
   board = Array(9).fill(null);
   gameOver = false;
-  currentPlayer = 'X';
+  currentPlayer = "X";
   turnIndicator.textContent = currentPlayer;
-  boardCells.forEach(cell => (cell.textContent = ''));
+  boardCells.forEach((cell) => (cell.textContent = ""));
 }
 
 // Eventos del tablero
@@ -81,20 +126,35 @@ boardCells.forEach((cell, i) => {
   cell.addEventListener("click", (e) => handleClick(e, i));
 });
 
-// Abrir modal
+// Retry modal
 retryBtn.addEventListener("click", () => {
   if (!board.some((cell) => cell)) return;
-  modal.classList.remove("hidden");
-  modal.querySelector("p").textContent = "Restart Game?";
-  confirmBtn.textContent = "Next Round";
+  retryModal.classList.remove("hidden");
 });
 
-// Botones del modal
-cancelBtn.addEventListener("click", () => {
-  modal.classList.add("hidden");
+cancelRetryBtn.addEventListener("click", () => {
+  retryModal.classList.add("hidden");
 });
 
-confirmBtn.addEventListener('click', () => {
+// confirmRetryBtn.addEventListener("click", () => {
+//   resetGame();
+//   retryModal.classList.add("hidden");
+// });
+
+confirmRetryBtn.addEventListener("click", () => {
   resetGame();
-  modal.classList.add('hidden');
+
+  // Reiniciar marcador también
+  score = { X: 0, O: 0, TIE: 0 };
+  scoreXEl.textContent = 0;
+  scoreOEl.textContent = 0;
+  scoreTieEl.textContent = 0;
+
+  retryModal.classList.add("hidden");
+});
+
+// Next round modal
+nextRoundBtn.addEventListener("click", () => {
+  resetGame();
+  nextRoundModal.classList.add("hidden");
 });
